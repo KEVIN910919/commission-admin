@@ -1,4 +1,4 @@
-const WORKER_BASE = "https://你的-worker-name.workers.dev";
+const WORKER_BASE = "https://commission-worker.kevin-tsui910919.workers.dev";
 
 document.getElementById("load").onclick = async () => {
   const res = await fetch(`${WORKER_BASE}/api/tickets`);
@@ -6,3 +6,4 @@ document.getElementById("load").onclick = async () => {
   document.getElementById("output").textContent =
     JSON.stringify(data, null, 2);
 };
+
